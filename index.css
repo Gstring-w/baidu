@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+input{
+    outline: none !important;
+}
+.header{
+    width: 100%;
+}
+.header ul {
+    padding-top:19px; 
+    float: right;
+}
+.header ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+a{
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+.header ul a:hover{
+    color:#2d78f4;
+}
+li.more a{
+    background-color: #38f;
+    color: #fff;
+    padding: 2px 0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+.logo{
+    height: 132px;
+    background-image: url('https://www.baidu.com/img/baidu_jgylogo3.gif');
+    background-size: 220px 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.input{
+    width: 40%;
+    margin: auto;
+    min-width: 820px;
+    /* border: 1px solid #000;s */
+}
+.input input{
+    font-size: 16px;
+}
+input{
+    display: inline-block;
+    width: 85%;
+    height: 34px;
+    vertical-align: top;
+    /* margin-left: -100px; */
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    background-color: #38f;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.setting{
+    display: none;
+    box-shadow: 1px 1px 1px 0px #ccc;
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    width: 65px;
+    border: 1px solid #ccc;
+    
+}
+.setting::before{
+    position: absolute;
+    left: 28px;
+    top: -7px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    transform: rotateZ(45deg);
+}
+.setting li{
+    cursor: pointer;
+    font-size: 12px;
+    height: 18px;
+    margin: 7px 0;
+    padding: 1px 0;
+    text-align: center;
+    line-height: 20px;
+}
+.setting li:hover{
+    background-color: #2d78f4;
+}
+
+.wrp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    /* z-index: -1; */
+}
+.login{
+    display: none;
+}
+
+.login .content{
+    padding: 0 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 356px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+.header1{
+    width: 100%;
+    margin-top: 24px;
+}
+.h-logo{
+    display: inline-block;
+    width: 125px;
+    height: 32px;
+    background-image: url('https://www.baidu.com/img/baidu_jgylogo3.gif');
+    background-position: center;
+    background-size: 125px 32px;
+    vertical-align: bottom;
+    background-repeat: no-repeat;   
+}
+.h-title{
+    margin-left: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 45px;
+    vertical-align: bottom;
+    
+}
+.body{
+    width: 100%;
+    margin-top: 24px;
+}
+.user,
+.pass {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.pass input{
+    font-size: 14px;
+}
+.user input,.pass input{
+    width: 100%;
+    margin: 10px 0;
+    height: 21px;
+    border: none;
+}
+.rember{
+    margin-top: 15px;
+}
+.rember input{
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+.rember span{
+    font-size: 14px;
+    color: #999;
+    line-height: 15px;
+    margin-left: 10px;
+}
+.btn-login{
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #38f;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-bottom{
+    margin-top: 10px;
+    width: 100%;
+    color:#38f;
+    font-size: 14px; 
+}
+.btn-bottom-l,
+.bottom1-l {
+    float: left;
+    font-size: 14px;
+    color:#38f;
+    cursor: pointer;
+}
+.btn-bottom-r,
+.bottom1-r {
+    float: right;
+    font-size: 14px;
+    color:#38f;
+    cursor: pointer;
+}
+.bottom1{
+    margin-top: 80px;
+    width: 100%;
+    height: 60px; 
+}
+.bottom1-r,
+.bottom1-l{
+    line-height: 60px;
+}
+.close,.closeW{
+    display: inline-block;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 360px;
+    top: 100px;
+}
+.close::before,
+.close::after,
+.closeW::before,
+.closeW::after {
+    position: absolute;  
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+    background-color: #ccc;
+}
+.close::before,
+.closeW::before {
+    transform: rotateZ(45deg);
+}
+.close::after,
+.closeW::after {
+    transform: rotateZ(-45deg);
+}
+.closeW{
+    left:auto;
+    top: 15px;
+    right: 10px;
+
+}
+#inputUser{
+    font-size: 14px;
+}
